@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LiftCue Privacy Policy</title>
+    <link rel="canonical" href="https://liftcue.coach/privacy/" />
+    <link rel="icon" href="../assets/icon.png" />
+    <meta name="theme-color" content="#04121c" />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <link rel="stylesheet" href="../assets/legal.css" />
+  </head>
+  <body>
+    <main class="legal">
+      <header class="bar">
+        <a class="home" href="../"><img src="../assets/icon.png" alt="" />LiftCue</a>
+      </header>
+      <article><h1>LiftCue Privacy Policy</h1>
+<p><strong>Effective date:</strong> September 23, 2026</p>
+<p>LiftCue (&quot;the app&quot;) is an iOS app by Nick Onofrio. It analyzes your exercise videos
+with Google Gemini to give form feedback, lets you log workouts and runs, and lets you
+share your progress with friends. This policy explains what data the app handles, who
+can see it, and where it goes.</p>
+<p>An account is optional — the app&#39;s core features work without one. If you don&#39;t sign
+in, nothing about you is stored on our servers; the app only sends crash and error
+reports to Sentry (see &quot;Analytics and crash reports&quot;).</p>
+<h2>What we collect</h2>
+<h3>Account and profile</h3>
+<p>When you create an account, we store with our backend provider (Supabase):</p>
+<ul>
+<li><strong>Email address</strong></li>
+<li><strong>Display name</strong></li>
+<li><strong>Sign-in provider identifiers</strong> (if you sign in with Apple or Google)</li>
+<li><strong>Username</strong> — the @handle you choose once. Your username and display name can&#39;t be
+changed after they&#39;re set.</li>
+<li><strong>Profile photo</strong> (optional) — a photo you pick, resized to at most 512 pixels and
+saved as a JPEG. You can use one of the app&#39;s preset icons instead.</li>
+<li><strong>When you accepted the community rules</strong> (asked the first time you use a social
+feature)</li>
+<li><strong>When you accepted the Terms of Service</strong>, and which version — accepting also
+records that you confirmed you are 17 or older</li>
+</ul>
+<p>Our backend provider also processes standard technical metadata as part of sign-in
+(such as sign-in timestamps and IP addresses); we don&#39;t use it for anything beyond
+operating the service.</p>
+<h3>Backups</h3>
+<p>While you are signed in, we back up the following so it survives deleting and
+reinstalling the app. Backups are linked to your account and readable only by you
+(unless you choose to share a workout or run — see below):</p>
+<ul>
+<li><strong>Analysis history</strong> — the exercise, the date and time, how long the lift took, any
+variation you picked (including an optional note you typed), and the AI coaching
+result (the scores and written feedback Gemini returned). Your videos and
+thumbnails are <strong>not</strong> part of this backup.</li>
+<li><strong>Workouts</strong> — the workout&#39;s name, its exercises and sets (weights, reps, hold
+times), and when it started and finished.</li>
+<li><strong>Runs</strong> — the distance, your time, and when you ran.</li>
+<li><strong>Workout templates</strong> — the template&#39;s name and its exercise names, set types and
+set counts.</li>
+</ul>
+<h3>Social features you choose to use</h3>
+<p>LiftCue&#39;s social features are friends-only, plus anyone you send a link to. If you
+use them, we store:</p>
+<ul>
+<li><strong>Shared posts</strong> — when you choose to share an analysis, we upload its <strong>video and
+thumbnail</strong> to our storage (a private storage bucket, 50 MB limit per file),
+together with your caption, the score, the exercise name and the clip&#39;s length.</li>
+<li><strong>Shared workouts and runs</strong> — sharing is <strong>off by default</strong>. A workout or run you
+choose to share becomes visible to your friends.</li>
+<li><strong>Comments, replies and reactions</strong> (emoji) on posts and on comments.</li>
+<li><strong>Friend compare cards</strong> — when you send a friend a comparison for an exercise, we
+store a snapshot of both people&#39;s stats for that exercise and your optional caption.</li>
+<li><strong>Friend requests, friendships and blocks.</strong></li>
+<li><strong>Share and invite links</strong> — the links you create, and a record of who has opened
+one of your post links.</li>
+<li><strong>Leaderboards</strong> don&#39;t store anything extra. They are counted from posts, comments
+and reactions that already exist.</li>
+</ul>
+<h3>Messages you send us</h3>
+<ul>
+<li><strong>Reports</strong> — when you report a post, comment, profile or compare card, we store
+what you reported and the reason you gave.</li>
+<li><strong>Feedback</strong> — the message you write (up to 2,000 characters), the category you
+pick, and the app version.</li>
+</ul>
+<h3>Push notifications</h3>
+<p>If you allow notifications, we store a <strong>push token</strong> and a <strong>device identifier</strong>
+created by the app (a random ID, not your phone&#39;s hardware or advertising ID). We use
+them to notify you about reactions, comments and replies, friend requests, compare
+cards, and new posts from friends whose notification bell you turned on. We also store
+your <strong>notification preferences</strong> (per notification type, and per friend).</p>
+<p>Notifications are delivered through <strong>Expo&#39;s push service</strong> and then Apple&#39;s. The
+notification text — for example a friend&#39;s username and the start of their comment —
+passes through both.</p>
+<h2>Who can see what</h2>
+<p>Here is who else using LiftCue can see your data:</p>
+<ul>
+<li><strong>Only you:</strong> your email address, your backups (analysis history, templates, and any
+workouts and runs you haven&#39;t shared), your notification settings and push tokens,
+your blocks, the reports and feedback you send, and your list of links.</li>
+<li><strong>Your friends:</strong> posts you share, workouts and runs you choose to share, and the
+comments and reactions you leave. A friend can also build a compare card from what
+you&#39;ve shared with them.</li>
+<li><strong>Everyone who can see a post:</strong> comments and reactions are visible to everyone who
+can see the post they&#39;re on — the poster&#39;s friends and anyone the poster sent a link
+to — even if those people aren&#39;t your friends.</li>
+<li><strong>The sender and recipient of a compare card</strong>, and no one else.</li>
+<li><strong>Anyone you send a share link to:</strong> a post link lets whoever opens it in the app
+(while signed in) see that one post — its video, caption, comments and reactions —
+until you delete the post or block them. An invite link lets whoever opens it add
+you as a friend, so only send it to people you want as friends. Links your friends
+make to your posts don&#39;t give anyone access to them. The web page a link opens
+shows none of your data.</li>
+<li><strong>Everyone signed in to LiftCue</strong> (except people you&#39;ve blocked or who&#39;ve blocked
+you): your username, display name and profile photo, so friends can find you and
+your comments show who wrote them. If you rank in a leaderboard&#39;s top 10, it shows
+your username, display name, photo and the count it ranks by (for example, how many
+posts you&#39;ve shared) — never your posts or videos.</li>
+<li><strong>Anyone with the link to your profile photo:</strong> profile photos are kept in public
+storage, so anyone who has a photo&#39;s web address can load it.</li>
+</ul>
+<p>Blocking someone hides your profile and content from each other and ends any
+friendship between you.</p>
+<h2>What stays on your device</h2>
+<ul>
+<li><strong>Your Gemini API key</strong> — stored only in the iOS keychain on your device. We never
+receive it or send it to our servers.</li>
+<li><strong>Videos and thumbnails you haven&#39;t shared</strong> — stored only in local files on your
+device. We receive a video and its thumbnail only when you share it as a post.</li>
+<li><strong>Your local history</strong> — analyses, workouts, runs, templates and badges, kept in a
+local database on your device and fully usable with no account at all.</li>
+</ul>
+<p>Deleting the app deletes this on-device data, and videos you never shared can&#39;t be
+recovered afterwards. If you were signed in, signing back in on a new install
+restores your backups (analysis history, workouts, runs and templates) — without the
+videos.</p>
+<h2>Video processing</h2>
+<p>When you analyze a video, the app sends it <strong>directly to Google&#39;s Gemini API under
+your own API key</strong> — not to us. Google automatically deletes uploaded files after
+48 hours. Google&#39;s handling of that data is governed by the
+<a href="https://developers.google.com/terms">Google API Terms</a> and the
+<a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms</a>.</p>
+<p>Sharing a video as a post is separate: that upload goes to our storage, as described
+under &quot;Social features you choose to use&quot;.</p>
+<h2>Analytics and crash reports</h2>
+<p>The app contains <strong>no advertising and no third-party advertising or tracking SDKs</strong>.
+We do not sell your data, build advertising profiles, or track you across other apps
+and websites.</p>
+<p>We do keep two records, used only to run and improve the app:</p>
+<ul>
+<li><strong>Product analytics</strong> — when you are signed in, the app records about 18 kinds of
+in-app events in our own Supabase database. For example: the app was opened; an
+analysis finished (with the exercise, score and any variation, including a note you
+typed) or failed (with the type of error); an API key was added (never the key
+itself); a workout started or finished (with exercise and set counts, its duration,
+and whether you shared it); a run was logged (distance and duration); a template was
+saved or deleted; a friend request was sent; a compare card was opened or sent; a
+share link was created or opened; a leaderboard or the quota help screen was opened.
+The first time you sign in, the app also records one &quot;analysis finished&quot; event for
+each analysis already on your device. These events are linked to your account and
+used only to understand how the app is used and what to improve.</li>
+<li><strong>Crash and error reports</strong> — we use <a href="https://sentry.io/privacy/">Sentry</a> to receive
+crash and error diagnostics: the error and its stack trace, your device model and
+iOS version, the app version, the recent in-app steps that led up to the error, and
+your account ID if you are signed in. Reports are scrubbed before they are sent:
+they never include your API key, your videos, or your coaching feedback.</li>
+</ul>
+<h2>Service providers</h2>
+<p>We use these providers to run parts of the app, and share data with them only for
+that purpose:</p>
+<ul>
+<li><strong>Supabase</strong> — our database, file storage and sign-in, and the server functions
+that send notifications and delete accounts.</li>
+<li><strong>Google Gemini</strong> — analyzes your videos under your own API key (see &quot;Video
+processing&quot;).</li>
+<li><strong>Sentry</strong> — crash and error reports.</li>
+<li><strong>Expo</strong> — delivers push notifications.</li>
+<li><strong>Apple</strong> — delivers push notifications, and runs Sign in with Apple if you use it.</li>
+<li><strong>Google</strong> — runs Sign in with Google if you use it.</li>
+<li><strong>Resend</strong> — sends the developer a private daily summary email with overall usage
+counts and the text of new feedback messages (without your name, email or account).</li>
+<li><strong>GitHub</strong> — hosts this policy and the web pages that share links open, and runs the
+job that prepares the daily summary.</li>
+</ul>
+<h2>Retention and account deletion</h2>
+<p>We keep your account data until you delete it. You can delete individual posts,
+comments and history entries in the app at any time.</p>
+<p>To delete your account, go to <strong>Settings → Manage account → Delete account</strong>. This
+permanently deletes your account and everything we store with it: your email and
+sign-in identifiers, profile, username, display name and profile photo; your backups;
+your posts, including their <strong>videos and thumbnails</strong>; your comments and reactions;
+your friendships and blocks; compare cards you sent or received; your links; your push
+tokens and notification settings; the reports and feedback you sent; and the analytics
+events linked to your account.</p>
+<p>A few things work differently:</p>
+<ul>
+<li><strong>Data on your device</strong> stays there until you delete the app — deleting your account
+does not erase the app&#39;s local data.</li>
+<li><strong>Backups and crash reports:</strong> copies may remain for a limited time in our database
+backups, and crash reports stay in Sentry for its standard retention period.</li>
+</ul>
+<p>You can also email us (address below) to request access to, correction of, or a copy
+of the account data we hold about you.</p>
+<h2>Children</h2>
+<p>LiftCue is not directed at children under 13, and we do not knowingly collect data
+from them.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this URL with a new
+effective date.</p>
+<h2>Contact</h2>
+<p>Questions? Email <a href="mailto:nicholas.s.onofrio@gmail.com">nicholas.s.onofrio@gmail.com</a>.</p>
+</article>
+      <footer>
+        <a href="../privacy/">Privacy policy</a> · <a href="../terms/">Terms</a> ·
+        <a href="https://apps.apple.com/us/app/liftcue-ai-lifting-coach/id6792940755">App Store</a>
+        · © 2026 LiftCue
+      </footer>
+    </main>
+  </body>
+</html>

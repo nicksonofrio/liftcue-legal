@@ -1,0 +1,104 @@
+:root {
+  --bg: #04121c;
+  --text: #f2f4f8;
+  --dim: #9aa3b2;
+  --accent: #22d3ee;
+  --card: rgba(255, 255, 255, 0.06);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, system-ui, sans-serif;
+  line-height: 1.5;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+.hero {
+  text-align: center;
+  padding: 56px 0 24px;
+}
+.icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+}
+.brand {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 16px 0 4px;
+}
+h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+.sub {
+  color: var(--dim);
+  font-size: 18px;
+  margin: 0 0 24px;
+}
+.badge {
+  display: inline-block;
+}
+.badge img {
+  height: 54px;
+  display: block;
+}
+.features {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  padding: 24px 0;
+}
+.features article {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+}
+.features h2 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+.features p,
+.free p {
+  color: var(--dim);
+  margin: 0;
+}
+.free {
+  text-align: center;
+  padding: 32px 0;
+}
+.free h2 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+.free p {
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+footer {
+  text-align: center;
+  color: var(--dim);
+  font-size: 14px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+@media (min-width: 720px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
